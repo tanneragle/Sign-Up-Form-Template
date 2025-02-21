@@ -23,13 +23,38 @@ body {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 
 .right {
     width: 65vw;
-    background-color: grey;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start
+    
+}
+
+.form-container {
+    height: 30vh;
+}
+
+.create-account-container {
+    height: 30vh;
+}
+
+.call-to-action-text {
+    font-size: 2rem;
+    margin: 3rem;
+    width: 75%;
 }
 
 .photo-credit {
