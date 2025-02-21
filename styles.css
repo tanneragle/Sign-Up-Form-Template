@@ -49,6 +49,20 @@ body {
     box-shadow: 0 4px 2px -2px lightgray;
 }
 
+.lets-do-this {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.form-main-div {
+    display: flex;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+}
+
 .create-account-container {
     height: 30vh;
 }
