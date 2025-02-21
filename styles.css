@@ -39,7 +39,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start
+    align-items: flex-start;
+    margin-bottom: 3rem;
     
 }
 
@@ -51,20 +52,30 @@ body {
 
 .lets-do-this {
     font-size: 2rem;
-    margin: 3rem;
+    margin-left: 3rem;
 }
 
 .form-main-div {
     display: flex;
+    gap: 5rem;
+    margin-left: 3rem;
 }
 
 .form-div {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .create-account-container {
     height: 30vh;
+}
+
+input {
+    padding: .3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120%;
 }
 
 .call-to-action-text {
