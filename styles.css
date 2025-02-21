@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
 }
 
@@ -41,6 +41,7 @@ body {
     justify-content: flex-end;
     align-items: flex-start;
     margin-bottom: 3rem;
+    margin-left: 3rem;
     
 }
 
@@ -52,13 +53,13 @@ body {
 
 .lets-do-this {
     font-size: 2rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
 }
 
 .form-main-div {
     display: flex;
-    gap: 5rem;
-    margin-left: 3rem;
+    gap: 6.5rem;
+    margin-left: 6rem;
 }
 
 .form-div {
@@ -75,8 +76,18 @@ input {
     padding: .3rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 120%;
+    width: 100%;
 }
+
+input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+input:required {
+    border: 1px solid rgba(168, 0, 0, 0.5); /* 50% opacity red */
+}
+
 
 .call-to-action-text {
     font-size: 2rem;
