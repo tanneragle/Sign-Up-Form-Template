@@ -17,7 +17,7 @@ body {
 
 .left {
     background-image: url(/imgs/background.jpg);
-    width: 35vw;
+    width: 40vw;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
 }
 
 .right {
-    width: 65vw;
+    width: 60vw;
     background-color: rgba(211, 211, 211, 10%);
     display: flex;
     flex-direction: column;
@@ -43,6 +43,12 @@ body {
     margin-bottom: 3rem;
     margin-left: 3rem;
     
+}
+
+.call-to-action-text {
+    font-size: 2rem;
+    margin: 3rem;
+    width: 75%;
 }
 
 .form-container {
@@ -68,10 +74,6 @@ body {
     gap: 1.5rem;
 }
 
-.create-account-container {
-    height: 30vh;
-}
-
 input {
     padding: .3rem;
     border: 1px solid #ccc;
@@ -88,11 +90,22 @@ input:required {
     border: 1px solid rgba(168, 0, 0, 0.5); /* 50% opacity red */
 }
 
+.create-account-container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
 
-.call-to-action-text {
-    font-size: 2rem;
-    margin: 3rem;
-    width: 75%;
+#create-account-btn {
+    background-color: #596D48;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 17rem;
+    border: none;
 }
 
 .photo-credit {
@@ -101,6 +114,14 @@ input:required {
 
 a {
     color: white;
+}
+
+.login {
+    text-decoration: none;
+}
+
+.login:hover {
+    color: turquoise;
 }
 
 a:hover {
