@@ -9,6 +9,13 @@ body {
     display: block;
 }
 
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -22,9 +29,35 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
+}
+
+.odin-logo-container {
+    height: 40vh;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.transparent-text-container {
+    background-color: rgba(0, 0, 0, .5);
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+p.odin-text {
+    font-size: 8rem;
+    font-family: Norse Bold;
+    padding-top: 2rem;
+}
+
+.photo-credit-footer {
+    height: 60vh;
+    display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .right {
