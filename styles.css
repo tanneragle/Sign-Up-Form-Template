@@ -6,27 +6,23 @@ body {
     font-family: Gotham, sans-serif;
     margin: 0;
     padding: 0;
-    display: block;
 }
 
 @font-face {
     font-family: 'Norse Bold';
     src: url('/fonts/Norse-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .container {
     display: flex;
     height: 100vh;
-    width: 100vw;
 }
 
 .left {
     background-image: url(/imgs/background.jpg);
-    width: 40vw;
+    flex: 2;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     color: white;
 }
@@ -41,7 +37,6 @@ body {
 .transparent-text-container {
     background-color: rgba(0, 0, 0, .5);
     height: 18vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +56,7 @@ p.odin-text {
 }
 
 .right {
-    width: 60vw;
+    flex: 3;
     background-color: rgba(211, 211, 211, 10%);
     display: flex;
     flex-direction: column;
@@ -75,13 +70,17 @@ p.odin-text {
     align-items: flex-start;
     margin-bottom: 3rem;
     margin-left: 3rem;
-    
 }
 
-.call-to-action-text {
+.call-to-action-text-upper, .call-to-action-text-lower {
     font-size: 2rem;
     margin: 3rem;
     width: 75%;
+}
+
+.call-to-action-text-upper {
+    margin: 0;
+    margin-left: 3rem;
 }
 
 .form-container {
@@ -120,7 +119,7 @@ input:focus {
 }
 
 input:required {
-    border: 1px solid rgba(168, 0, 0, 0.5); /* 50% opacity red */
+    border-color: rgba(168, 0, 0, 0.5);
 }
 
 .create-account-container {
@@ -149,16 +148,8 @@ a {
     color: white;
 }
 
-.login {
-    text-decoration: none;
-}
-
-.login:hover {
-    color: turquoise;
-}
-
 a:hover {
-    color: turquoise
+    color: turquoise;
 }
 
 a:visited {
